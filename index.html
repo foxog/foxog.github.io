@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>chromeos wiki</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">chromeos wiki</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="update/" class="nav-link">更新日志</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="2333/" class="nav-link">交流群</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="update/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">激活</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_4" class="nav-link">手势</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_11" class="nav-link">快捷键</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_14" class="nav-link">插件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#chrome_1" class="nav-link">chrome应用</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_15" class="nav-link">安卓软件</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_16" class="nav-link">开发者模式</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_18" class="nav-link">命令行</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#linux-crouton" class="nav-link">Linux-crouton</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#linux-crostini" class="nav-link">Linux-crostini</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_31" class="nav-link">恢复系统</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_34" class="nav-link">性能</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_41" class="nav-link">杂项</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#pixelbook" class="nav-link">pixelbook</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_42" class="nav-link">虚拟桌面</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_43" class="nav-link">官方说明书</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#chromium" class="nav-link">chromium计划文档（适用范围：大佬）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#chromefycroissant" class="nav-link">chromefy/croissant</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#brunch" class="nav-link">brunch</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>欢迎访问chromeos wiki </p>
+<h1 id="_1">激活</h1>
+<p>仅提供一些思路，具体的使用方法请自行搜索</p>
+<h3 id="_2">软路由/智能路由激活</h3>
+<p>常规激活方案，需要拥有/购买对应的硬件</p>
+<h3 id="_3">虚拟机软路由激活</h3>
+<p>最稳定可靠且成本低廉的激活方法，需要手动设置chromebook网关及dns</p>
+<h3 id="sstap">SSTAP有线网激活</h3>
+<p>无法运行虚拟机的备用方案，同样需要手动设置chromebook网关及dns</p>
+<h3 id="sstap_1">SSTAP无线网激活</h3>
+<p>目前来说最方便好用的激活方法，操作简单，不过对节点及dns有一定要求</p>
+<h3 id="vn-hotspot">V*N hotspot</h3>
+<p>需要root手机</p>
+<h3 id="netshare">netshare等设置代理端口的激活方案</h3>
+<p>可以激活系统，但经常遇到无法激活商店的问题  </p>
+<hr />
+<h1 id="_4">手势</h1>
+<h3 id="_5">触摸板手势</h3>
+<p>触摸板手势是chromeos的核心之一，善用手势可以极大的提升chromeos的使用体验</p>
+<h3 id="_6">双指手势</h3>
+<p>双指左/右划=浏览器前进/后退</p>
+<h3 id="_7">三指手势</h3>
+<p>三指左/右划=切换至上一个/下一个标签页 <br />
+三指下滑=多任务界面<br />
+三指轻点链接=在新标签页打开链接<br />
+三指轻点标签页=关闭点击的标签页  </p>
+<h3 id="_8">四指手势</h3>
+<p>四指左/右滑=切换至右侧/左侧桌面</p>
+<h3 id="_9">触屏手势</h3>
+<p>由于chromeos 80版本的更新，平板模式下的手势存在变动，建议参考谷歌官方的触屏手势教程文档</p>
+<h3 id="_10"></h3>
+<hr />
+<h1 id="_11">快捷键</h1>
+<h3 id="chrome">chrome快捷键</h3>
+<p>参考<a href="https://support.google.com/chrome/answer/157179?hl=zh-Hans">https://support.google.com/chrome/answer/157179?hl=zh-Hans</a></p>
+<h3 id="chromeos">chromeos快捷键</h3>
+<h3 id="_12">切换输入法</h3>
+<p>CTRL+空格</p>
+<h3 id="_13"></h3>
+<hr />
+<h1 id="_14">插件</h1>
+<h3 id="switchyomega">SwitchyOmega</h3>
+<p>简单易用的代理设置插件，可以提升chromos的日常使用体验
+安装路径<a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif">https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif</a></p>
+<hr />
+<h1 id="chrome_1">chrome应用</h1>
+<h3 id="cog">COG</h3>
+<p>通用性能监测工具</p>
+<h3 id="caret">Caret</h3>
+<p>简单易用的本地文字编辑工具</p>
+<h3 id="moonlight">moonlight</h3>
+<p>n卡专属的串流软件，延迟低，画质好  </p>
+<hr />
+<h1 id="_15">安卓软件</h1>
+<p>chromeos通过arc++实现了对安卓的兼容，不过存在着一定的效率损失</p>
+<h3 id="ms-rdp">MS RDP</h3>
+<p>微软官方触屏的远程桌面软件</p>
+<h3 id="paesec">Paesec</h3>
+<p>体验还不错的串流软件</p>
+<h3 id="spacedesk">spacedesk</h3>
+<p>通过虚拟显示器实现的同屏/多屏拓展软件，比较适合chromebook使用</p>
+<h3 id="qq-hd">QQ HD</h3>
+<p>QQ的平板版，可以与手机、电脑QQ共存，当前版本存在一定的小bug，可以尝试安装旧版</p>
+<h3 id="wps">WPS</h3>
+<p>十分适合chromebook使用的轻办公软件，不过国内版本的wps安装后会闪退，只有在play商店/apkpure下载安装的海外版才不会闪退</p>
+<h3 id="qqhd">QQ音乐HD</h3>
+<p>对横屏使用有优化，体验还不错</p>
+<h3 id="autodesk-sketchbook">Autodesk sketchbook</h3>
+<p>建议带有压感笔的chromebook安装的软件，用途如软件名所述</p>
+<hr />
+<h1 id="_16">开发者模式</h1>
+<h3 id="_17">打开方法</h3>
+<h4 id="chromebook">chromebook</h4>
+<p>按刷新加电源加esc键进入恢复模式，然后在恢复模式界面按ctrl+D，并按回车确认关闭系统验证即可</p>
+<h4 id="chromebox">chromebox</h4>
+<p>首先，关闭 Chromebox。使用回形针或类似物体按住“恢复”按钮。按“电源”按钮以重新开启 Chromebox。当您在屏幕上看到一条消息后，松开“恢复”按钮。</p>
+<h4 id="chromebook_1">chromebook平板</h4>
+<p>按住音量调高、音量调低和电源按钮至少 10 秒钟 ，进入恢复模式，在恢复模式按住音量下键，再上下音量键，然后按音量键移动光标，选择关闭系统验证[Confirm Disabling OS Verification]，（注意：以后启动时需要用音量键选择开发者选项[Developer Options]，从内部硬盘[Boot from Internal Hard Disk.]引导开机)</p>
+<hr />
+<h1 id="_18">命令行</h1>
+<h3 id="terminal">Terminal</h3>
+<p>按CTRL+ALT+T即可打开，打开开发者模式后输入shell按回车即可进入shell</p>
+<h3 id="tty">TTY</h3>
+<p>按ctrl+alt+刷新键即可进入，默认账号chronos，登陆后即可直接进入shell</p>
+<h3 id="_19">杂项</h3>
+<h4 id="_20">修改密码</h4>
+<p>如果遇到需要密码的情况，可以进入TTY使用root登陆，root的密码默认为test0000，然后执行chromeos-setdevpasswd修改密码</p>
+<h4 id="_21">常用指令</h4>
+<h5 id="free-h">free -h</h5>
+<p>查询剩余内存</p>
+<h5 id="df-h">df -h</h5>
+<p>查询硬盘分区及容量</p>
+<h5 id="cat-proccpuinfo">cat /proc/cpuinfo</h5>
+<p>查询cpu型号</p>
+<hr />
+<h1 id="linux-crouton">Linux-crouton</h1>
+<blockquote>
+<p>为了更好的Linux使用体验，您可以在<a href="http://linux.vbird.org/">http://linux.vbird.org/</a>学习一定的Linux基础</p>
+</blockquote>
+<h3 id="_22">简介</h3>
+<p>crouton是通过容器技术实现的Linux子系统，与主系统共用Linux核心，相对crostini而言更节约处理器性能及内存，但是受主系统核心影响，部分软件无法正常运行，项目官网：<github.com/dnschneid/crouton></p>
+<h3 id="_23">安装</h3>
+<p>请在全局连接全球互联网并关闭IPv6的情况下安装<br />
+从<a href="https://goo.gl/fd3zc">https://goo.gl/fd3zc</a>下载crouton<br />
+进入shell<br />
+shell中运行 sudo install -Dt /usr/local/bin -m 755 ~/Downloads/crouton <br />
+shell中运行 sudo crouton -t xfce<br />
+然后等待Linux完成安装<br />
+也可使用备份包安装，参考隔壁<a href="http://120.77.255.220/?p=130">http://120.77.255.220/?p=130</a><br />
+安装完成后在shell里运行 sudo startxfce4 就能进入crouton Linux子系统的图形界面</p>
+<h3 id="_24">中文字体</h3>
+<p>参考<a href="https://blog.csdn.net/weixin_39792252/article/details/80415550">https://blog.csdn.net/weixin_39792252/article/details/80415550</a></p>
+<h3 id="deepin-wine">deepin-wine</h3>
+<p>deepin-wine是目前来说比较好用的运行QQ，微信等Windows软件的方法
+安装可以参考<a href="https://github.com/zq1997/deepin-wine">https://github.com/zq1997/deepin-wine</a></p>
+<h3 id="_25">输入法</h3>
+<p>参考隔壁<a href="http://120.77.255.220/?p=146">http://120.77.255.220/?p=146</a></p>
+<h4 id="pixelbook-go">pixelbook go触摸板参数</h4>
+<p>synclient FingerLow=1 FingerHigh=5  </p>
+<hr />
+<h1 id="linux-crostini">Linux-crostini</h1>
+<h3 id="_26">简介</h3>
+<p>crostini是通过虚拟机技术实现的Linux子系统，拥有一个独立的Linux核心，相对crouton而言会占用更多的处理器及内存，相对而言有更好的软件兼容性，</p>
+<h3 id="_27">安装</h3>
+<p>为了提高安装成功率，建议关闭其它软件/网页并在全局连接全球互联网的情况下安装crostini，如安装失败，请点重试，若多次重试仍然失败，建议设置中删除Linux再次安装，若再次安装并多次重试后仍然失败，建议使用他人的备份包安装</p>
+<h3 id="_28">语言</h3>
+<h3 id="deepin-wine_1">deepin-wine</h3>
+<p>同上，安装方法参考<a href="https://github.com/zq1997/deepin-wine">https://github.com/zq1997/deepin-wine</a></p>
+<h3 id="_29">输入法</h3>
+<p>同上，参考隔壁<a href="http://120.77.255.220/?p=146">http://120.77.255.220/?p=146</a></p>
+<h3 id="_30">内存</h3>
+<p>crostini占用的内存较多，建议4g内存的chromeos设备在关闭其它网页及软件后运行，8g内存的chromos设备可以直接运行  </p>
+<hr />
+<h1 id="_31">恢复系统</h1>
+<h3 id="_32">快捷键</h3>
+<p>chromebook：任何时候都可以按esc+刷新键+电源键进入恢复界面<br />
+chromebook平板及chromebox等参考隔壁<a href="http://120.77.255.220/?p=158">http://120.77.255.220/?p=158</a></p>
+<h3 id="_33">恢复插件</h3>
+<p>访问 <a href="https://chrome.google.com/webstore/detail/chromebook-recovery-utili/jndclpdbaamdhonoechobihbbiimdgai/related">https://chrome.google.com/webstore/detail/chromebook-recovery-utili/jndclpdbaamdhonoechobihbbiimdgai/related</a> 即可(需要全球互联网连接）</p>
+<hr />
+<h1 id="_34">性能</h1>
+<h3 id="_35">视频解码</h3>
+<p>Intel处理器参考：<a href="https://en.wikipedia.org/wiki/Intel_Quick_Sync_Video">https://en.wikipedia.org/wiki/Intel_Quick_Sync_Video</a><br />
+MTK 8173处理器支持4k@30帧h.264 hevc VP9解码<br />
+MTK 8183处理器无VP9解码器
+瑞芯微 RK3399处理器支持4k@60帧 h.264 hevc VP9解码<br />
+建议有看油管4k需求的同学购买支持4k@60帧解码的chromos设备<br />
+不支持vp9解码的chromos设备建议安装h264fi插件以降低功耗（不过安装插件后会失去播放4k视频的选项）  </p>
+<h3 id="_36">任务管理器</h3>
+<p>搜索+esc键打开 可以查询当前处理器及内存的占用情况</p>
+<h3 id="_37">超线程</h3>
+<p>新版的chromos默认关闭了超线程，打开方法如下<br />
+浏览器打开chrome://flags#scheduler-configuration<br />
+将scheduler-configuration设置为Enable，然后选择重启  </p>
+<h3 id="_38">处理器</h3>
+<p>出于续航的考虑，谷歌限制了酷睿系列处理器在chromebook上的频率，使其多核性能只有标准性能的60-80%左右（通过crouton+wine运行国际象棋测得，极个别型号最低可达40%），奔腾和赛扬处理器受到影响相对比较小，基本可以发挥全部性能  </p>
+<h3 id="_39">内存</h3>
+<h4 id="_40">各种应用内存占用的情况</h4>
+<p>测试方法：通过关闭软件前后可用内存相减得到</p>
+<p>系统占用：1000-1500MB<br />
+一个网页：100-200MB<br />
+一个插件：50-100MB（注意，adblock是每开一个网页额外占用20-30MB内存）<br />
+一个普通安卓APP：200-300MB<br />
+QQ等国产安卓APP：300-500MB<br />
+炉石等大型游戏：1-1.5G（注意，为了保护您的双手，请不要用13英寸以上的chromebook玩王者/和平精英等需要大量操作的手游）<br />
+Linux-crouton：100-200MB<br />
+Linux-crostini：700-800MB<br />
+Linux软件占用内存<br />
+wine-微信：200-300MB<br />
+wine-QQ：200-240MB<br />
+wine-QQ lite：170-220MB  </p>
+<p>综上所述：  </p>
+<p>4G内存的chromeos设备开机后可用内存约2g左右，在打开中等数量的网页（7-10个）+crouton+微信+QQ+3个安卓APP的情况下正好耗尽内存（swap=可用内存），因此如果有运行Linux软件/QQ/微信的需求，尽量使用crouton运行，若需要使用新版WPS等只能由crostini运行的软件，建议先关闭多余的网页/安卓APP以免频繁产生内存交换，导至卡顿以及emmc掉速.  </p>
+<p>8G内存的机型暂时不用担心内存不够用（如果你需要运行大量消耗内存的软件，请考虑购买大内存的Windows电脑而不是使用chromebook）</p>
+<hr />
+<h1 id="_41">杂项</h1>
+<h2 id="pixelbook">pixelbook</h2>
+<h3 id="pixelbook_1">pixelbook可以用不到一百的华为笔，同样有压感，体验一般</h3>
+<h2 id="_42">虚拟桌面</h2>
+<p>新版本的chromeos支持虚拟桌面，三指下滑通过打开多任务界面后即可添加桌面，切换桌面的手势为四指横划</p>
+<h2 id="_43">官方说明书</h2>
+<p><a href="https://www.google.com/chromebook/howto/">https://www.google.com/chromebook/howto/</a></p>
+<h2 id="chromium">chromium计划文档（适用范围：大佬）</h2>
+<p><a href="http://dev.chromium.org/chromium-os/chromiumos-design-docs">http://dev.chromium.org/chromium-os/chromiumos-design-docs</a>  </p>
+<h2 id="chromefycroissant">chromefy/croissant</h2>
+<p>将chromeos安装在普通PC及其它型号chromebook上的方法<br />
+项目地址：<a href="https://github.com/imperador/chromefy">https://github.com/imperador/chromefy</a><br />
+建议在Ubuntu下运行  </p>
+<h2 id="brunch">brunch</h2>
+<p>另外一种将chromeos安装到pc上面的方法<br />
+项目地址：<a href="https://github.com/sebanc/brunch">https://github.com/sebanc/brunch</a>  </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2020-09-24 09:03:32.437306+00:00
+-->
